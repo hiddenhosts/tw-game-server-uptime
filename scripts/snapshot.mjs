@@ -138,6 +138,17 @@ async function main() {
 		stats.months.find((m) => m.month === wanted) ?? stats.months[stats.months.length - 1]
 	if (!month) throw new Error('No months in the source data')
 
+	// A month we only watched part of has to say so inside the file, not only in
+	// the README: the JSON is the citable artefact, and its event counters read
+	// as "none happened" when what they mean is "we were not watching yet".
+	const daysInMonth = new Date(
+		Date.UTC(Number(month.month.slice(0, 4)), Number(month.month.slice(5, 7)), 0),
+	).getUTCDate()
+	const note =
+		month.observedDays < daysInMonth
+			? `Partial month: ${month.observedDays} of ${daysInMonth} days observed. The event counters (wentDead, recovered, urlChanged) cover only those days, so a zero means "not observed" rather than "did not happen".`
+			: undefined
+
 	const file = join(ROOT, 'data', `${month.month}.json`)
 	mkdirSync(dirname(file), { recursive: true })
 	writeFileSync(
@@ -146,6 +157,7 @@ async function main() {
 			{
 				...month,
 				capturedAt: new Date().toISOString().slice(0, 10),
+				...(note ? { note } : {}),
 				source: `${SITE_URL}/uptime`,
 				method: `${SITE_URL}/methodology`,
 				license: 'CC BY 4.0',

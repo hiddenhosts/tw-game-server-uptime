@@ -32,6 +32,7 @@
     }
   },
   "capturedAt": "2026-09-14",
+  "note": "Partial month: 1 of 30 days observed. The event counters (wentDead, recovered, urlChanged) cover only those days, so a zero means \"not observed\" rather than \"did not happen\".",
   "source": "https://www.hiddenhosts.com/uptime",
   "method": "https://www.hiddenhosts.com/methodology",
   "license": "CC BY 4.0"
