@@ -1,0 +1,39 @@
+{
+  "month": "2026-09",
+  "observedDays": 1,
+  "listings": 568,
+  "alive": 559,
+  "aliveRate": 0.984,
+  "medianAliveDays": 7,
+  "wentDead": 0,
+  "recovered": 0,
+  "urlChanged": 0,
+  "urlChangedRate": 0,
+  "byCategory": {
+    "tera": {
+      "alive": 5,
+      "listings": 5
+    },
+    "other": {
+      "alive": 1,
+      "listings": 1
+    },
+    "lineage": {
+      "alive": 472,
+      "listings": 479
+    },
+    "maplestory": {
+      "alive": 16,
+      "listings": 16
+    },
+    "ragnarok-online": {
+      "alive": 65,
+      "listings": 67
+    }
+  },
+  "capturedAt": "2026-09-14",
+  "note": "First snapshot. The daily record began on 2026-09-14, so this month has one observed day and the event counters (wentDead, recovered, urlChanged) start from zero rather than covering the whole month.",
+  "source": "https://www.hiddenhosts.com/uptime",
+  "method": "https://www.hiddenhosts.com/methodology",
+  "license": "CC BY 4.0"
+}
