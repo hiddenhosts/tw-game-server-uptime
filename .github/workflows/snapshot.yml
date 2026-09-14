@@ -1,0 +1,46 @@
+name: Monthly snapshot
+
+# The 2nd rather than the 1st: the site writes its own daily row on a 6-hourly
+# cron, and reading the month before its last row of the month has landed would
+# archive a month that is one snapshot short of finished.
+on:
+  schedule:
+    - cron: '0 2 2 * *'
+  workflow_dispatch:
+    inputs:
+      month:
+        description: 'Month to archive (YYYY-MM). Blank means the month that just ended.'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Fetch and archive
+        env:
+          MONTH: ${{ inputs.month }}
+        run: node scripts/snapshot.mjs
+
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Nothing to commit is a normal outcome: a re-run of the same month
+          # writes the same bytes. It is not a failure and must not be reported
+          # as one, or the only signal this workflow has stops meaning anything.
+          if git diff --quiet; then
+            echo 'No change.'
+            exit 0
+          fi
+          git add data README.md
+          git commit -m "data: snapshot $(date -u '+%Y-%m')"
+          git push
