@@ -32,7 +32,6 @@
     }
   },
   "capturedAt": "2026-09-14",
-  "note": "First snapshot. The daily record began on 2026-09-14, so this month has one observed day and the event counters (wentDead, recovered, urlChanged) start from zero rather than covering the whole month.",
   "source": "https://www.hiddenhosts.com/uptime",
   "method": "https://www.hiddenhosts.com/methodology",
   "license": "CC BY 4.0"
