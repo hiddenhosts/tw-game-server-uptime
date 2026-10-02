@@ -1,17 +1,17 @@
 {
   "month": "2026-09",
-  "observedDays": 1,
-  "listings": 568,
-  "alive": 559,
-  "aliveRate": 0.984,
-  "medianAliveDays": 7,
-  "wentDead": 0,
-  "recovered": 0,
+  "observedDays": 16,
+  "listings": 572,
+  "alive": 543,
+  "aliveRate": 0.949,
+  "medianAliveDays": 24,
+  "wentDead": 27,
+  "recovered": 7,
   "urlChanged": 0,
   "urlChangedRate": 0,
   "byCategory": {
     "tera": {
-      "alive": 5,
+      "alive": 3,
       "listings": 5
     },
     "other": {
@@ -19,7 +19,7 @@
       "listings": 1
     },
     "lineage": {
-      "alive": 472,
+      "alive": 455,
       "listings": 479
     },
     "maplestory": {
@@ -28,11 +28,15 @@
     },
     "ragnarok-online": {
       "alive": 65,
-      "listings": 67
+      "listings": 68
+    },
+    "game-server-hosting": {
+      "alive": 3,
+      "listings": 3
     }
   },
-  "capturedAt": "2026-09-14",
-  "note": "Partial month: 1 of 30 days observed. The event counters (wentDead, recovered, urlChanged) cover only those days, so a zero means \"not observed\" rather than \"did not happen\".",
+  "capturedAt": "2026-10-02",
+  "note": "Partial month: 16 of 30 days observed. The event counters (wentDead, recovered, urlChanged) cover only those days, so a zero means \"not observed\" rather than \"did not happen\".",
   "source": "https://www.hiddenhosts.com/uptime",
   "method": "https://www.hiddenhosts.com/methodology",
   "license": "CC BY 4.0"
