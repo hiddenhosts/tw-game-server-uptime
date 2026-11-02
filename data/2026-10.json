@@ -1,0 +1,42 @@
+{
+  "month": "2026-10",
+  "observedDays": 31,
+  "listings": 576,
+  "alive": 525,
+  "aliveRate": 0.911,
+  "medianAliveDays": 55,
+  "wentDead": 39,
+  "recovered": 17,
+  "urlChanged": 1,
+  "urlChangedRate": 0.002,
+  "byCategory": {
+    "tera": {
+      "alive": 3,
+      "listings": 5
+    },
+    "other": {
+      "alive": 1,
+      "listings": 1
+    },
+    "lineage": {
+      "alive": 439,
+      "listings": 479
+    },
+    "maplestory": {
+      "alive": 17,
+      "listings": 17
+    },
+    "ragnarok-online": {
+      "alive": 62,
+      "listings": 71
+    },
+    "game-server-hosting": {
+      "alive": 3,
+      "listings": 3
+    }
+  },
+  "capturedAt": "2026-11-02",
+  "source": "https://www.hiddenhosts.com/uptime",
+  "method": "https://www.hiddenhosts.com/methodology",
+  "license": "CC BY 4.0"
+}

@@ -12,25 +12,25 @@
 
 <!-- LATEST_START -->
 
-## 2026 年 9 月
+## 2026 年 10 月
 
 | | |
 |---|---|
-| 追蹤站點 | 572 |
-| 連得上 | 543（94.9%） |
-| 當月換過網址 | 0（0.0%） |
-| 當月被標記失效 | 27 次 |
-| 當月恢復 | 7 次 |
-| 連續存活中位數 | 24 天 |
-| 已觀測 | 16 天 |
+| 追蹤站點 | 576 |
+| 連得上 | 525（91.1%） |
+| 當月換過網址 | 1（0.2%） |
+| 當月被標記失效 | 39 次 |
+| 當月恢復 | 17 次 |
+| 連續存活中位數 | 55 天 |
+| 已觀測 | 31 天 |
 
 ### 各遊戲
 
 | 遊戲 | 站點數 | 連得上 |
 |---|---|---|
-| [天堂](https://www.hiddenhosts.com/c/lineage) | 479 | 455（95.0%） |
-| [RO 仙境傳說](https://www.hiddenhosts.com/c/ragnarok-online) | 68 | 65（95.6%） |
-| [楓之谷](https://www.hiddenhosts.com/c/maplestory) | 16 | 16（100.0%） |
+| [天堂](https://www.hiddenhosts.com/c/lineage) | 479 | 439（91.6%） |
+| [RO 仙境傳說](https://www.hiddenhosts.com/c/ragnarok-online) | 71 | 62（87.3%） |
+| [楓之谷](https://www.hiddenhosts.com/c/maplestory) | 17 | 17（100.0%） |
 | [Tera](https://www.hiddenhosts.com/c/tera) | 5 | 3（60.0%） |
 | [game-server-hosting](https://www.hiddenhosts.com/c/game-server-hosting) | 3 | 3（100.0%） |
 | 其他 | 1 | 1（100.0%） |
@@ -42,7 +42,8 @@
 
 | 月份 | 站點 | 存活率 | 換網址 | 失效 | 恢復 |
 |---|---|---|---|---|---|
-| 2026 年 10 月 | 572 | 94.6% | 0.0% | 2 | 0 |
+| 2026 年 11 月 | 576 | 91.3% | 0.0% | 1 | 2 |
+| 2026 年 10 月 | 576 | 91.1% | 0.2% | 39 | 17 |
 | 2026 年 9 月 | 572 | 94.9% | 0.0% | 27 | 7 |
 <!-- MONTHS_END -->
 
@@ -95,7 +96,7 @@ archived here as dated snapshots. What is measured is whether an address still
 answers, not the quality of the server behind it, and not its legality.
 
 <!-- EN_SUMMARY_START -->
-As of **September 2026**: 572 servers tracked, 543 reachable (94.9%), median uninterrupted uptime 24 days. 0 changed domain during the month (0.0%), over 16 observed days.
+As of **October 2026**: 576 servers tracked, 525 reachable (91.1%), median uninterrupted uptime 55 days. 1 changed domain during the month (0.2%), over 31 observed days.
 <!-- EN_SUMMARY_END -->
 
 Method: <https://www.hiddenhosts.com/methodology> ·
